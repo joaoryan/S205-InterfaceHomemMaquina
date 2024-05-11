@@ -7,7 +7,7 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   width: 100vw;
-  height: 95vh;
+  height: 90vh;
   padding: 0px 0px 0px 0px;
 `;
 

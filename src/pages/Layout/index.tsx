@@ -11,9 +11,6 @@ const Layout = () => {
       <Container>
         <Section>
           <Outlet />
-          <Styled.Footer>
-            <p>&copy; 2024 Controle de Acesso Ltda - INATEL</p>
-          </Styled.Footer>
         </Section>
       </Container>
     </>
