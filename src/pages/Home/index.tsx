@@ -8,7 +8,6 @@ import Header from '../../components/Hader';
 
 
 export function Home(): JSX.Element {
-
   return (
     <><Styled.Container>
       <Styled.backgroundGif>
