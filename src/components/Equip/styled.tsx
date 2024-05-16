@@ -23,7 +23,7 @@ export const Card = styled.div<Props>`
 export const CardDiv = styled.div`
     border-radius: 5px;
     border: 1px solid #8b8b8b;
-    padding: 10px;
+    padding: 5px;
     width: 200px;
 `;
 
@@ -32,11 +32,11 @@ export const Title = styled.div`
     font-weight: bold;
     cursor: default;
     @media (max-width: 740px) {
-        font-size: 14px;
+        font-size: 13px;
     }
 `;
 
 export const Text = styled.div`
-    font-size: 14px;
+    font-size: 12px;
     cursor: default;
 `;

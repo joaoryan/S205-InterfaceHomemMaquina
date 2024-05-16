@@ -11,6 +11,7 @@ const Layout = () => {
       <Container>
         <Section>
           <Outlet />
+
         </Section>
       </Container>
     </>

@@ -7,6 +7,7 @@ import { event } from 'jquery';
 import { useEffect, useState } from 'react';
 import { toast } from 'react-toastify'
 import { MdDehaze } from 'react-icons/md';
+import { FaArrowRight } from "react-icons/fa";
 
 const Header = () => {
     const navigate = useNavigate();
@@ -40,6 +41,10 @@ const Header = () => {
                 INATEL
             </Styled.DivLogo>
             <Styled.DivAction>
+                <Styled.LogoutButton onClick={() => navigate(`/`)}>
+                    Proxima pagina
+                    <FaArrowRight />
+                </Styled.LogoutButton>
                 <Styled.LogoutButton onClick={() => navigate(`/`)}>
                     Sair
                     <RiLogoutBoxRLine />

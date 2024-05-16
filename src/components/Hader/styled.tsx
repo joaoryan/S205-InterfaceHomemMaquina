@@ -41,6 +41,7 @@ export const LogoutButtonInstall = styled.div`
 export const DivLogo = styled.div`
   display: flex;
   align-items: center;
+  font-size: 14px;
   gap: 5px;
   svg{
     font-size: 24px; 
@@ -59,7 +60,7 @@ export const Hader = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 16px;
+  padding: 5px;
   margin: 0px 20px;
   border-bottom: #bbbbbb 1px solid;
   

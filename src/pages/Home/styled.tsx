@@ -7,7 +7,7 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   width: 100vw;
-  height: 100vh;
+  height: 95vh;
   padding: 0px 0px 0px 0px;
 `;
 
@@ -43,7 +43,7 @@ export const CardDiv = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin-top: 20px;
+  margin-top: 10px;
   a{
     text-decoration: none;
   }
@@ -58,19 +58,28 @@ export const CardDiv = styled.div`
 export const CardButton = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 0px 30px;
+  height: 100%;
+  padding: 40px 60px 0px 50px;
+  @media (max-width: 540px) {
+    padding: 20px 0px 0px 30px;
+  }
 `;
 
 export const CardNotificationDiv = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 5px
+  gap: 5px;
+  height: 100%;
+  padding: 40px 60px 0px 50px;
+  @media (max-width: 540px) {
+    padding: 20px 0px 0px 30px;
+  }
 `;
 
 export const CardNotification = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 0px 20px;
+  padding: 0px 10px 0px 0px;
 
   div{
     display: flex;
@@ -90,7 +99,7 @@ export const CardButtonDiv = styled.div`
   justify-content: flex-start;
   align-items: center;
   width: 60%;
-  height: 400px; 
+  height: 350px; 
   transition: 0.5s;
   border-radius: 8px;
   background-color: ${props => props.theme.colors.textPrimary};
@@ -115,30 +124,41 @@ export const CardButtonDiv = styled.div`
     width: 90%;
     height: 200px;
     svg{
-      font-size: 40px;
+      font-size: 30px;
     }
   } 
 `;
 
 export const backgroundGif = styled.div`
   width: 100%;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   //height: 500px;
   background-image: url('https://media.giphy.com/media/3WuagBkXjI2SHfgDsU/giphy.gif');
   background-size: contain;
+`;
+
+export const info1Div = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: linear-gradient(#31314f, #23233c,#0a0c21, #0a0c21);
+  @media (max-width: 600px) {
+  display: flex;
+  flex-direction: column;
+  }
 `;
 
 export const infoDiv = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
   margin: 30px 180px 0px 180px;
   @media (max-width: 1000px) {
     margin: 10px 40px 0px 40px;
   }
   @media (max-width: 600px) {
-    margin: 10px 20px 0px 20px;
+    margin: 0px 20px 0px 20px;
   }
 `;
 
@@ -221,13 +241,13 @@ export const TextNotification = styled.div`
 
 export const Title = styled.h1`
   width: 100%;
-  font-size: 30px;
+  font-size: 20px;
   cursor: default;
   @media (max-width: 1040px) {
-    font-size: 20px;
+    font-size: 18px;
   } 
   @media (max-width: 740px) {
-    font-size: 18px;
+    font-size: 14px;
   }
 `;
 
