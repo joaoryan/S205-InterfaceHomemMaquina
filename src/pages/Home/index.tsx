@@ -12,7 +12,7 @@ export function Home(): JSX.Element {
   return (
     <><Styled.Container>
       <Styled.backgroundGif>
-        <Header />
+        <Header page={`jobs`} />
         <Styled.CardDiv>
           <Styled.CardButtonDiv>
             <Styled.CardButton>

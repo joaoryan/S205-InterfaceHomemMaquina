@@ -8,8 +8,13 @@ import { useEffect, useState } from 'react';
 import { toast } from 'react-toastify'
 import { MdDehaze } from 'react-icons/md';
 import { FaArrowRight } from "react-icons/fa";
+interface Props {
+    page: string;
+}
 
-const Header = () => {
+const Header = ({
+    page
+}: Props) => {
     const navigate = useNavigate();
     const [promptEvent, setPromptEvent] = useState<any>(null)
 
@@ -41,7 +46,7 @@ const Header = () => {
                 INATEL
             </Styled.DivLogo>
             <Styled.DivAction>
-                <Styled.LogoutButton onClick={() => navigate(`/`)}>
+                <Styled.LogoutButton onClick={() => navigate(page)}>
                     Proxima pagina
                     <FaArrowRight />
                 </Styled.LogoutButton>
