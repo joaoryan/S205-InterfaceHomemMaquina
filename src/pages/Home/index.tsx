@@ -5,7 +5,7 @@ import { FaMoneyCheck } from "react-icons/fa";
 import { IoLibrary } from "react-icons/io5";
 import TeamCard from '../../components/Equip';
 import Header from '../../components/Hader';
-
+import image1 from '../../assets/image/joao-ryan.png'
 
 export function Home(): JSX.Element {
 
@@ -16,7 +16,7 @@ export function Home(): JSX.Element {
         <Styled.CardDiv>
           <Styled.CardButtonDiv>
             <Styled.CardButton>
-              <RiContactsFill />
+              <img src={image1} />
               <Styled.Title>
                 Olá Joao
               </Styled.Title>

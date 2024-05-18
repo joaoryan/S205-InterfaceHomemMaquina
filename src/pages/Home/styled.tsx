@@ -44,6 +44,15 @@ export const CardDiv = styled.div`
   flex-direction: row;
   justify-content: space-evenly;
   margin-top: 10px;
+
+  img{
+    width: 100px;
+    border-radius: 5px;
+    @media (max-width: 540px) {
+      width: 60px;
+    }
+  }
+
   a{
     text-decoration: none;
   }
@@ -131,7 +140,7 @@ export const CardButtonDiv = styled.div`
 
 export const backgroundGif = styled.div`
   width: 100%;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
   //height: 500px;
   background-image: url('https://media.giphy.com/media/3WuagBkXjI2SHfgDsU/giphy.gif');
   background-size: contain;
