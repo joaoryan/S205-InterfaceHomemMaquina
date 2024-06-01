@@ -5,7 +5,7 @@ const light = {
   colors: {
     background: '#0a0c21',
     textPrimary: '#bdbdbd',//8899a6
-    hoverColor: '#F231A5',//#369ee3
+    hoverColor: '#FF4500', //'#F231A5',//#369ee3
 
     textSecondary: Colors.HIGH_PURE,
     header: Colors.PRIMARY_LIGHTEST,

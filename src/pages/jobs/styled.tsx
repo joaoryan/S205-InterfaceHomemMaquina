@@ -8,8 +8,18 @@ export const Container = styled.div`
   justify-content: flex-start;
   width: 100vw;
   height: 95vh;
-  padding: 0px 0px 0px 0px;
+  padding: 0px 00px 0px 00px;
 `;
+
+export const Content = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  padding: 0px 20px 0px 20px;
+`;
+
 
 export const LogoutButton = styled.div`
   display: flex;
@@ -41,9 +51,12 @@ export const Baseboard = styled.div`
 
 export const CardDiv = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-evenly;
+  align-items: center;
   margin-top: 10px;
+  padding: 0px 50px;
+  gap: 20px;
   a{
     text-decoration: none;
   }
@@ -94,7 +107,7 @@ export const CardNotification = styled.div`
 `;
 
 
-export const CardButtonDiv = styled.div`
+export const Card = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -105,11 +118,16 @@ export const CardButtonDiv = styled.div`
   background-color: ${props => props.theme.colors.textPrimary};
   color: ${props => props.theme.colors.background};
   cursor: pointer;
+  img{
+    width: 90px;
+    border-radius: 100%;
+  }
   svg{
     color: ${props => props.theme.colors.background};;
     font-size: 80px;
   }
   :hover{
+    height: 380px;
     transition: 0.5s;
     background-color: ${props => props.theme.colors.hoverColor};
   }
@@ -122,7 +140,10 @@ export const CardButtonDiv = styled.div`
   } 
   @media (max-width: 740px) {
     width: 90%;
-    height: 200px;
+    height: 150px;
+    :hover{
+      height: 180px;
+    }
     svg{
       font-size: 30px;
     }
@@ -241,13 +262,13 @@ export const TextNotification = styled.div`
 
 export const Title = styled.h1`
   width: 100%;
-  font-size: 20px;
+  font-size: 26px;
   cursor: default;
   @media (max-width: 1040px) {
-    font-size: 18px;
+    font-size: 22px;
   } 
   @media (max-width: 740px) {
-    font-size: 14px;
+    font-size: 18px;
   }
 `;
 
