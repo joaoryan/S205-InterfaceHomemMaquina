@@ -111,51 +111,43 @@ export const Card = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  padding: 20px;
   width: 60%;
-  height: 350px; 
+  height: 180px; 
   transition: 0.5s;
   border-radius: 8px;
+  gap: 10px;
   background-color: ${props => props.theme.colors.textPrimary};
   color: ${props => props.theme.colors.background};
   cursor: pointer;
   img{
-    width: 90px;
+    width: 60px;
     border-radius: 100%;
   }
   svg{
     color: ${props => props.theme.colors.background};;
     font-size: 80px;
   }
-  :hover{
-    height: 380px;
-    transition: 0.5s;
-    background-color: ${props => props.theme.colors.hoverColor};
-  }
+ 
   @media (max-width: 1040px) {
     width: 80%;
-    height: 212px;
+    height: 190px;
     svg{
       font-size: 60px;
     }
   } 
   @media (max-width: 740px) {
     width: 90%;
-    height: 150px;
-    :hover{
-      height: 180px;
-    }
+    height: 110px;
+    padding: 10px;
     svg{
-      font-size: 30px;
+      font-size: 20px;
     }
-  } 
-`;
-
-export const backgroundGif = styled.div`
-  width: 100%;
-  padding-bottom: 10px;
-  //height: 500px;
-  background-image: url('https://media.giphy.com/media/3WuagBkXjI2SHfgDsU/giphy.gif');
-  background-size: contain;
+  }
+  .ContentText{
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 export const info1Div = styled.div`
@@ -264,6 +256,7 @@ export const Title = styled.h1`
   width: 100%;
   font-size: 26px;
   cursor: default;
+  margin-top: 0px;
   @media (max-width: 1040px) {
     font-size: 22px;
   } 
@@ -273,15 +266,12 @@ export const Title = styled.h1`
 `;
 
 export const Text1 = styled.div`
-  font-size: 20px;
+  font-size: 12px;
   cursor: default;
   text-align: justify;
   @media (max-width: 740px) {
-    font-size: 16px;
+    font-size: 12px;
   } 
-  &:hover {
-    color: #F231A5
-  }
 `;
 
 export const Text2 = styled.div`
