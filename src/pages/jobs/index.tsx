@@ -9,9 +9,10 @@ export function Jobs(): JSX.Element {
     <>
       <Styled.Container>
         <Header page={`/`} />
-        <Styled.Title>Vagas</Styled.Title>
         <Styled.Content>
+
           <Styled.CardDiv>
+            <Styled.Title>Vagas</Styled.Title>
             <Styled.Card>
               <img src={microsoftLogo} />
               <div className='ContentText'>

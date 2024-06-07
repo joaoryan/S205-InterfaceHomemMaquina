@@ -17,7 +17,7 @@ export const Content = styled.div`
   justify-content: flex-start;
   width: 100%;
   height: 100%;
-  padding: 0px 20px 0px 20px;
+  padding: 30px 20px 0px 20px;
 `;
 
 
@@ -110,13 +110,14 @@ export const CardNotification = styled.div`
 export const Card = styled.div`
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+ // align-items: center;
+  align-items: flex-start;
   padding: 20px;
   width: 60%;
-  height: 180px; 
+  height: 150px; 
   transition: 0.5s;
   border-radius: 8px;
-  gap: 10px;
+  gap: 20px;
   background-color: ${props => props.theme.colors.textPrimary};
   color: ${props => props.theme.colors.background};
   cursor: pointer;
@@ -131,7 +132,7 @@ export const Card = styled.div`
  
   @media (max-width: 1040px) {
     width: 80%;
-    height: 190px;
+    height: 130px;
     svg{
       font-size: 60px;
     }
@@ -142,6 +143,9 @@ export const Card = styled.div`
     padding: 10px;
     svg{
       font-size: 20px;
+    }
+    img{
+      width: 40px;
     }
   }
   .ContentText{
@@ -253,7 +257,7 @@ export const TextNotification = styled.div`
 `;
 
 export const Title = styled.h1`
-  width: 100%;
+  width: 60%;
   font-size: 26px;
   cursor: default;
   margin-top: 0px;
@@ -261,7 +265,7 @@ export const Title = styled.h1`
     font-size: 22px;
   } 
   @media (max-width: 740px) {
-    font-size: 18px;
+    font-size: 14px;
   }
 `;
 
