@@ -55,19 +55,28 @@ export function Home(): JSX.Element {
         </Styled.CardDiv>
       </Styled.backgroundGif>
       <Styled.info1Div>
-        <Styled.infoDiv>
-          <Styled.Title>Suas aulas de hoje:</Styled.Title>
-          <TeamCard Title={'S205'} Text={'19h30 - Lab 1.2 - VI'} timeAnimate={1} />
-          <TeamCard Title={'M019'} Text={'21h30 - Sala 04 - I'} timeAnimate={1.5} />
-          <TeamCard Title={'C145'} Text={'17h30 - Lab 1.3 - VI'} timeAnimate={2} />
-        </Styled.infoDiv>
-        <Styled.infoDiv>
-          <Styled.Title>Sua próxima prova:</Styled.Title>
-          <TeamCard Title={'S205'} Text={'15/05/2024'} timeAnimate={1} />
-        </Styled.infoDiv>
+        <div>
+          <Styled.infoDiv>
+            <Styled.Title>Suas aulas de hoje:</Styled.Title>
+            <TeamCard Title={'S205'} Text={'19h30 - Lab 1.2 - VI'} timeAnimate={1} />
+            <TeamCard Title={'M019'} Text={'21h30 - Sala 04 - I'} timeAnimate={1.5} />
+            <TeamCard Title={'C145'} Text={'17h30 - Lab 1.3 - VI'} timeAnimate={2} />
+          </Styled.infoDiv>
+          <Styled.infoDiv>
+            <Styled.Title>Sua próxima prova:</Styled.Title>
+            <TeamCard Title={'S205'} Text={'15/05/2024'} timeAnimate={1} />
+          </Styled.infoDiv>
+        </div>
+        <div>
+          <Styled.infoDiv>
+            <Styled.Title>Tarefa</Styled.Title>
+            <TeamCard Title={'S205'} Text={'15/05/2024'} timeAnimate={1} />
+          </Styled.infoDiv>
+        </div>
+
       </Styled.info1Div>
 
-    </Styled.Container>
+    </Styled.Container >
 
     </>
   );

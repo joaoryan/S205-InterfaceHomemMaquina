@@ -153,7 +153,7 @@ export const info1Div = styled.div`
   background: linear-gradient(#31314f, #23233c,#0a0c21, #0a0c21);
   @media (max-width: 600px) {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   }
 `;
 
