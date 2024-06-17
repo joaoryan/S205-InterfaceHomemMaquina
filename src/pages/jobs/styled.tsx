@@ -60,7 +60,7 @@ export const Card = styled.div`
   }
   &.expand{
     transition: 0.5s;
-    height: 320px; 
+    height: auto; 
   }
   .videoClass{
     width: 400px;
