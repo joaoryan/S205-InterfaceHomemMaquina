@@ -102,6 +102,20 @@ export const CardNotification = styled.div`
  
 `;
 
+export const CardTask = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 170px;
+  height: 60px;
+  padding: 10px;
+  transition: 0.5s;
+  border-radius: 8px;
+  background-color: ${props => props.theme.colors.textPrimary};
+  color: ${props => props.theme.colors.background};
+  cursor: pointer;
+`;
 
 export const CardButtonDiv = styled.div`
   display: flex;
@@ -152,8 +166,8 @@ export const info1Div = styled.div`
   justify-content: center;
   background: linear-gradient(#31314f, #23233c,#0a0c21, #0a0c21);
   @media (max-width: 600px) {
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
   }
 `;
 
@@ -237,6 +251,19 @@ export const TitleNotification = styled.div`
   @media (max-width: 740px) {
     font-size: 14px;
   }
+`;
+
+export const TitleTask = styled.div`
+  width: 100%;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: default;
+`;
+
+export const TextTask = styled.div`
+  width: 100%;
+  font-size: 12px;
+  cursor: default;
 `;
 
 export const TextNotification = styled.div`

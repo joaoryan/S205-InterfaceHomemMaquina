@@ -24,7 +24,7 @@ export const CardDiv = styled.div`
     border-radius: 5px;
     border: 1px solid #8b8b8b;
     padding: 5px;
-    width: 200px;
+    width: 180px;
 `;
 
 export const Title = styled.div`

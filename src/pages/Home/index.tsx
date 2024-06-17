@@ -70,7 +70,10 @@ export function Home(): JSX.Element {
         <div>
           <Styled.infoDiv>
             <Styled.Title>Tarefa</Styled.Title>
-            <TeamCard Title={'S205'} Text={'15/05/2024'} timeAnimate={1} />
+            <Styled.CardTask>
+              <Styled.TitleTask>{'EXERCICIOS S205'}</Styled.TitleTask>
+              <Styled.TextTask>{'03/09/2050'}</Styled.TextTask>
+            </Styled.CardTask>
           </Styled.infoDiv>
         </div>
 
