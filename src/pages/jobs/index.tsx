@@ -49,7 +49,7 @@ export function Jobs(): JSX.Element {
                       item.id === cardExpandId &&
                       <div>
                         <iframe
-                          width="auto" height="180"
+                          className='videoClass'
                           src={item.video}
                           title="YouTube video player"
                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; web-share" />

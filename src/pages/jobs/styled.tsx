@@ -62,6 +62,9 @@ export const Card = styled.div`
     transition: 0.5s;
     height: 320px; 
   }
+  .videoClass{
+    width: 400px;
+  }
  
   @media (max-width: 1040px) {
     width: 80%;
@@ -76,6 +79,9 @@ export const Card = styled.div`
     img{
       width: 40px;
     }
+    .videoClass{
+      width: 200px;
+    } 
   }
   .ContentText{
     display: flex;

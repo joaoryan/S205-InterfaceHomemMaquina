@@ -107,7 +107,7 @@ export const CardTask = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  width: 170px;
+  width: 160px;
   height: 60px;
   padding: 10px;
   transition: 0.5s;
@@ -164,10 +164,16 @@ export const info1Div = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
+  width: 100vw;
   background: linear-gradient(#31314f, #23233c,#0a0c21, #0a0c21);
   @media (max-width: 600px) {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    div{
+      margin: 0px;
+    }
   }
 `;
 
