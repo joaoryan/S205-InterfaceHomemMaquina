@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react'
 import { Outlet, useNavigate } from 'react-router-dom'
 import { Section, Container } from './styles'
-import NavBar from '../../components/NavBar'
-import * as Styled from './styles';
+import Background from '../../styles/Background';
 
 const Layout = () => {
   const navigate = useNavigate();
@@ -11,7 +10,6 @@ const Layout = () => {
       <Container>
         <Section>
           <Outlet />
-
         </Section>
       </Container>
     </>

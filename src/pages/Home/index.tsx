@@ -6,6 +6,7 @@ import { IoLibrary } from "react-icons/io5";
 import TeamCard from '../../components/Equip';
 import Header from '../../components/Hader';
 import image1 from '../../assets/image/joao-ryan.png'
+import { FaGear } from "react-icons/fa6";
 
 export function Home(): JSX.Element {
 
@@ -58,13 +59,13 @@ export function Home(): JSX.Element {
         <div>
           <Styled.infoDiv>
             <Styled.Title>Suas aulas de hoje:</Styled.Title>
-            <TeamCard Title={'S205'} Text={'19h30 - Lab 1.2 - VI'} timeAnimate={1} />
-            <TeamCard Title={'M019'} Text={'21h30 - Sala 04 - I'} timeAnimate={1.5} />
-            <TeamCard Title={'C145'} Text={'17h30 - Lab 1.3 - VI'} timeAnimate={2} />
+            <TeamCard Title={'S205'} Text={'19h30 - Lab 1.2 - VI'} Text2='NP1 - 86 NP2 - ' TextFrequency={'frequência: 12/20'} timeAnimate={1} />
+            <TeamCard Title={'M019'} Text={'21h30 - Sala 04 - I'} Text2='NP1 - 60 NP2 - 80' TextFrequency={'frequência: 2/5'} timeAnimate={1.5} />
+            <TeamCard Title={'C145'} Text={'17h30 - Lab 1.3 - VI'} Text2='NP1 - 74 NP2 - ' TextFrequency={'frequência: 8/15'} timeAnimate={2} />
           </Styled.infoDiv>
           <Styled.infoDiv>
             <Styled.Title>Sua próxima prova:</Styled.Title>
-            <TeamCard Title={'S205'} Text={'15/05/2024'} timeAnimate={1} />
+            <TeamCard Title={'S205'} Text={'15/05/2024'} Text2={'19h30 - Lab 1.2 - VI'} timeAnimate={1} />
           </Styled.infoDiv>
         </div>
         <div>
@@ -73,8 +74,12 @@ export function Home(): JSX.Element {
             <Styled.CardTask>
               <Styled.TitleTask>{'EXERCICIOS S205'}</Styled.TitleTask>
               <Styled.TextTask>{'03/09/2050'}</Styled.TextTask>
+              <Styled.TextTask>{'10 pontos'}</Styled.TextTask>
             </Styled.CardTask>
           </Styled.infoDiv>
+        </div>
+        <div>
+          <FaGear />
         </div>
 
       </Styled.info1Div>

@@ -7,7 +7,7 @@ import { event } from 'jquery';
 import { useEffect, useState } from 'react';
 import { toast } from 'react-toastify'
 import { MdDehaze } from 'react-icons/md';
-import { FaArrowRight } from "react-icons/fa";
+import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 interface Props {
     page: string;
 }
@@ -47,8 +47,10 @@ const Header = ({
             </Styled.DivLogo>
             <Styled.DivAction>
                 <Styled.LogoutButton onClick={() => navigate(page)}>
-                    Proxima pagina
-                    <FaArrowRight />
+                    <>
+                        Proxima pagina
+                        < FaArrowRight />
+                    </>
                 </Styled.LogoutButton>
                 <Styled.LogoutButton onClick={() => navigate(`/`)}>
                     Sair

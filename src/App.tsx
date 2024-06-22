@@ -5,7 +5,7 @@ import 'react-toastify/dist/ReactToastify.min.css';
 import AppRoutes from './routes'
 import "./index.css";
 import { ToastContainer } from 'react-toastify';
-
+import Background from './styles/Background';
 
 function App() {
   return (
@@ -16,6 +16,7 @@ function App() {
         hideProgressBar
         closeButton={false}
       />
+
     </ProviderWrapper>
   )
 }

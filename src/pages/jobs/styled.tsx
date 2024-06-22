@@ -80,7 +80,7 @@ export const Card = styled.div`
       width: 40px;
     }
     .videoClass{
-      width: 200px;
+      width: 280px;
     } 
   }
   .ContentText{
@@ -99,6 +99,7 @@ export const IconArrowDown = styled.div`
 export const Title1 = styled.div`
   width: 100%;
   font-size: 24px;
+
   margin-top: 0px;
   @media (max-width: 1040px) {
     font-size: 22px;

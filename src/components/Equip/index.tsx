@@ -7,6 +7,8 @@ import image from '../../assets/image/software1.jpeg';
 interface TeamCardProps {
     Title: string,
     Text: string,
+    Text2?: string,
+    TextFrequency?: string,
     timeAnimate: number,
     threshold?: number,
 }
@@ -14,6 +16,8 @@ interface TeamCardProps {
 const TeamCard = ({
     Title,
     Text,
+    Text2,
+    TextFrequency,
     timeAnimate,
     threshold = 0.5,
 }: TeamCardProps) => {
@@ -24,6 +28,8 @@ const TeamCard = ({
                 <Styled.CardDiv>
                     <Styled.Title>{Title}</Styled.Title>
                     <Styled.Text>{Text}</Styled.Text>
+                    <Styled.Text>{Text2}</Styled.Text>
+                    <Styled.Text>{TextFrequency}</Styled.Text>
                 </Styled.CardDiv>
             </div>
         </Styled.Card>

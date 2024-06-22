@@ -46,10 +46,10 @@ export const CardDiv = styled.div`
   margin-top: 10px;
 
   img{
-    width: 100px;
+    width: 90px;
     border-radius: 5px;
     @media (max-width: 540px) {
-      width: 60px;
+      width: 44px;
     }
   }
 
@@ -134,7 +134,7 @@ export const CardButtonDiv = styled.div`
   }
   :hover{
     transition: 0.5s;
-    background-color: ${props => props.theme.colors.hoverColor};
+   // background-color: ${props => props.theme.colors.hoverColor};
   }
   @media (max-width: 1040px) {
     width: 80%;
@@ -165,6 +165,7 @@ export const info1Div = styled.div`
   flex-direction: row;
   justify-content: center;
   width: 100vw;
+  padding-top: 20px;
   background: linear-gradient(#31314f, #23233c,#0a0c21, #0a0c21);
   @media (max-width: 600px) {
     display: flex;
